@@ -1,0 +1,17 @@
+{
+"aws_region": "ap-south-1",
+"bucket": "CHANGE_ME-aq-pulse-dev",
+"kinesis_stream": "aq-pulse-dev",
+"bronze_prefix": "bronze/air_quality",
+"silver_prefix": "silver/air_quality",
+"gold_prefix": "gold/air_quality_daily",
+"rejected_prefix": "rejected/air_quality",
+"glue_database": "aq_pulse_dev",
+"glue_job_name": "aq-pulse-silver-dev",
+"emr_application_id": "CHANGE_ME",
+"emr_execution_role_arn": "CHANGE_ME",
+"redshift_workgroup": "CHANGE_ME",
+"redshift_database": "dev",
+"step_function_arn": "CHANGE_ME",
+"city_config_key": "config/cities.json"
+}
