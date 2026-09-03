@@ -1,0 +1,16 @@
+name: ci
+on:
+push:
+pull_request:
+jobs:
+test:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v4
+- uses: actions/setup-python@v5
+with:
+python-version: &#39;3.11&#39;
+- run: python -m compileall -q src lambda glue emr orchestration/mwaa/dags
+- run: python -m unittest discover -s tests -v
+- run: python -m json.tool config/dev.json &gt; /dev/null
+- run: python -m json.tool orchestration/stepfunctions/aq_pipeline.asl.json &gt; /dev/null
