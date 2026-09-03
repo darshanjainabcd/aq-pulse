@@ -1,0 +1,20 @@
+[{
+  "AlarmName": "aq-pulse-lambda-errors",
+  "Namespace": "AWS/Lambda",
+  "MetricName": "Errors",
+  "Statistic": "Sum",
+  "Period": 300,
+  "EvaluationPeriods": 1,
+  "Threshold": 1,
+  "ComparisonOperator": "GreaterThanOrEqualToThreshold"
+},
+{
+  "AlarmName": "aq-pulse-kinesis-write-provisioned-throughput",
+  "Namespace": "AWS/Kinesis",
+  "MetricName": "WriteProvisionedThroughputExceeded",
+  "Statistic": "Sum",
+  "Period": 300,
+  "EvaluationPeriods": 1,
+  "Threshold": 1,
+  "ComparisonOperator": "GreaterThanOrEqualToThreshold"
+}]
