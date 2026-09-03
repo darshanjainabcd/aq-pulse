@@ -1,0 +1,12 @@
+[
+{"city_id":"pune","city":"Pune","country":"IN","latitude":18.5204,"longitude":73.8567,"timezone":"Asia/Kolkata"},
+{"city_id":"mumbai","city":"Mumbai","country":"IN","latitude":19.0760,"longitude":72.8777,"timezone":"Asia/Kolkata"},
+{"city_id":"delhi","city":"Delhi","country":"IN","latitude":28.6139,"longitude":77.2090,"timezone":"Asia/Kolkata"},
+{"city_id":"bengaluru","city":"Bengaluru","country":"IN","latitude":12.9716,"longitude":77.5946,"timezone":"Asia/Kolkata"},
+{"city_id":"hyderabad","city":"Hyderabad","country":"IN","latitude":17.3850,"longitude":78.4867,"timezone":"Asia/Kolkata"},
+{"city_id":"london","city":"London","country":"GB","latitude":51.5072,"longitude":-0.1276,"timezone":"Europe/London"},
+{"city_id":"new_york","city":"New York","country":"US","latitude":40.7128,"longitude":-74.0060,"timezone":"America/New_York"},
+{"city_id":"singapore","city":"Singapore","country":"SG","latitude":1.3521,"longitude":103.8198,"timezone":"Asia/Singapore"},
+{"city_id":"tokyo","city":"Tokyo","country":"JP","latitude":35.6762,"longitude":139.6503,"timezone":"Asia/Tokyo"},
+{"city_id":"sydney","city":"Sydney","country":"AU","latitude":-33.8688,"longitude":151.2093,"timezone":"Australia/Sydney"}
+]
