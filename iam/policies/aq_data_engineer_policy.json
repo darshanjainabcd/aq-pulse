@@ -1,0 +1,31 @@
+{
+"Version": "2012-10-17",
+"Statement": [
+{
+"Sid": "DataLakeAccess",
+"Effect": "Allow",
+"Action": ["s3:GetObject", "s3:PutObject", "s3:ListBucket"],
+"Resource": ["arn:aws:s3:::CHANGE_ME", "arn:aws:s3:::CHANGE_ME/*"]
+},
+{
+"Sid": "KinesisAccess",
+"Effect": "Allow",
+"Action": ["kinesis:PutRecord", "kinesis:PutRecords", "kinesis:GetRecords", "kinesis:GetShardIterator",
+"kinesis:DescribeStreamSummary", "kinesis:ListShards"],
+"Resource": "arn:aws:kinesis:*:*:stream/aq-pulse-*"
+},
+{
+"Sid": "GlueEmrOrchestration",
+"Effect": "Allow",
+"Action": ["glue:StartJobRun", "glue:GetJobRun", "emr-serverless:StartJobRun", "emr-serverless:GetJobRun",
+"states:StartExecution", "states:DescribeExecution"],
+"Resource": "*"
+},
+{
+"Sid": "Observability",
+"Effect": "Allow",
+"Action": ["logs:CreateLogGroup", "logs:CreateLogStream", "logs:PutLogEvents", "cloudwatch:PutMetricData"],
+"Resource": "*"
+}
+]
+}
